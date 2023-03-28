@@ -1,0 +1,74 @@
+<!-- made by bharti sahu -->
+<div *ngIf="status==1">
+    <div class="fluid-container">
+        <div class="section-header">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                    Home/User Administration/Create User
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="pull-right">
+                        <span>
+                            <i class="fa fa-solid fa-arrow-right-to-bracket"></i></span>
+                        <i class="fas fas-solid fas-arrow-right-from-bracket"></i>
+                        <span>Last Login:03/02/2018 16:22:08 Logout</span>
+                        <span>
+                            <i class="fa fa-solid fa-power-off"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full-box">
+        <div class="row">
+            <div class="userHead">
+                <i style='font-size : 25px' class="fa fa-address-book-o" aria-hidden="true">User Administration</i>
+            </div>
+            <div class="box-control">
+                <div class="row">
+                    <div class="list-item col-md-6 col-sm-6">
+                        <button id="demo">create Role</button>
+                    </div>
+                    <div class="list-item col-md-6 col-sm-6">
+                        <button id="demo" (click)="ChangeCom(2)">Create User</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="list-item col-md-6 col-sm-6">
+                        <button id="demo">Role Access Control</button>
+                    </div>
+                    <div class="list-item col-md-6 col-sm-6">
+                        <button id="demo" (click)="ChangeCom(3)">User Access Control</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="list-item col-md-6 col-sm-6">
+                        <button id="demo">Role Management</button>
+                    </div>
+                    <div class="list-item col-md-6 col-sm-6">
+                        <button id="demo" (click)="ChangeCom(4)" >User Management</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="list-item col-md-6 col-sm-6">
+                        <button id="demo">Security Management</button>
+                    </div>
+                    <div class="list-item col-md-6 col-sm-6">
+                        <button id="demo">Theme Setup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="status==2">
+    <app-create-user-panel></app-create-user-panel>
+</div>
+<div *ngIf="status==3">
+    <app-useraccesscontrolpanel></app-useraccesscontrolpanel>
+</div>
+<div *ngIf="status==4">
+    <app-usermanagement-administor></app-usermanagement-administor>
+</div>

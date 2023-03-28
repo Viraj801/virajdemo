@@ -1,0 +1,54 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav  my-style" fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>User Management</mat-toolbar>
+    <mat-nav-list class="nav-list">
+
+      <div class="navbar-item-box">
+        <a mat-list-item href="#"><i class="fa fa-home" aria-hidden="true">Home</i></a>
+      </div>
+      <div class="navbar-item-box">
+        <a mat-list-item href="#"><i class="fa fa-money" aria-hidden="true"> Search</i></a>
+      </div>
+      <div class="navbar-item-box">
+        <a mat-list-item href="#"><i class="fa fa-address-card" aria-hidden="true"> Account/Card Management</i></a>
+      </div>
+      <div class="navbar-item-box">
+        <a mat-list-item href="#"><i class="fa fa-user" aria-hidden="true"> Program Manager Admin</i></a>
+      </div>
+      <div class="navbar-item-box">
+        <a mat-list-item href="#"><i class="fa fa-line-chart" aria-hidden="true"> Reports</i></a>
+      </div>
+      <div class="navbar-item-box">
+        <a mat-list-item (click)="ChangeCom(1)"><i class="fa fa-puzzle-piece" aria-hidden="true" > Program Parameters</i></a>
+      </div>
+      <div class="navbar-item-box">
+        <a mat-list-item (click)="ChangeCom(1)"><i class="fa fa-address-book-o" aria-hidden="true">User Administration</i></a>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="row">
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <div class="form-outline  col">
+          <!-- <input type="search" placeholder="Search" class="form-control" /> -->
+          <form class="d-flex">
+            <input class="form-control search-box me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        
+      <!-- <span>UserManagementFrontEnd</span> -->
+      
+    </mat-toolbar>
+    <div  >
+      <app-user-management-penal *ngIf="status==1" ></app-user-management-penal>
+
+    </div>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>

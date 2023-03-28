@@ -1,0 +1,281 @@
+<div class="mainsection">
+
+  <div class="fluid-container">
+    <div class="section-header">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <span><i class="fa fa-home" aria-hidden="true"></i></span>
+          Home/User Administration/Update User
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="pull-right">
+            <span><i class="fa fa-solid fa-arrow-right-to-bracket"></i></span>
+            <i class="fas fas-solid fas-arrow-right-from-bracket"></i>
+            <span>Last Login: 03/02/2018 16:22:08 Logout</span>
+            <span><i class="fa fa-solid fa-power-off"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card rounded-0">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <i class="fa fa-address-book"></i>
+            Update User
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="pull-right">
+              <i class="fa fa-chevron-up m-r-5"></i>
+              <i class="fa fa-compress m-r-5"></i>
+              <i class="fa fa-close m-r-5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body m-20">
+        <!-- Progress Section -->
+        <div class="row custom-progress-bar">
+          <div class="col-md-2">
+            <div class="custom-nav text-center">
+              <div>
+                <i class="fa fa-arrow-left	"></i>
+              </div>
+              <p onclick="ChangeCom(2)">Previous</p>
+            </div>
+          </div>
+          <div class="col-md-8 text-center">
+            <ul class="testStatus ">
+              <li class="testStatus first inactive">
+                <span>
+                  <i class="fa fa-user"></i>
+                </span>
+                <p class="mb-0">General</p>
+              </li>
+              <li class="testStatusGood active">
+                <span>
+                  <i class="fa fa-lock"></i>
+                </span>
+                <p class="mb-0">Permission</p>
+              </li>
+              <li class="testStatus inactive third">
+                <span>
+                  <i class="fa fa-universal-access"></i>
+                </span>
+                <p class="mb-0">Access Control</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="custom-nav text-center pull-right">
+              <div>
+                <i class="fa fa-arrow-right"></i>
+              </div>
+              <p>Next</p>
+            </div>
+          </div>
+        </div>
+        <!-- Full complete Section one -->
+        <section class="row form-section">
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group row">
+                  <label for="userRole" class="col-sm-3 col-form-label">User Role:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="userRole">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group row">
+                  <label for="userid" class="col-sm-3 col-form-label">User Id:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="userid">
+                  </div>
+                </div>
+              </div>
+              <!-- For institution section -->
+              <section class="row">
+                <div class="col-md-6 col-sm-6">
+                  <input type="text" class="Institution" placeholder="Institution Name:">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="pull-right">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </section>
+              <!-- for checkbox option -->
+              <div class="Menu">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <label class="ForInstitution">Available Institution Name</label>
+                    <section class="ForDivingcolumn1">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                          <input type="search" placeholder="Search..">
+                          <div class="ListofMenu">
+                            <div> <input type="checkbox" id="cookie" clickon="">
+                              <label for="Cookie">Cookie</label>
+                            </div>
+                            <div> <input type="checkbox" id="Cookie_CERT" name="Cookie_CERT" value="List">
+                              <label for="Cookie_CERT">Cookie_CERT</label>
+                            </div>
+                            <div> <input type="checkbox" id="Cookie_Dev" name="Cookie_Dev" value="List">
+                              <label for="Cookie_Dev">Cookie_Dev</label>
+                            </div>
+                            <div> <input type="checkbox" id="Cookie_QA" name="Cookie_QA" value="List">
+                              <label for="Cookie_QA">Cookie_QA</label>
+                            </div>
+                            <div> <input type="checkbox" id="Cookie-2" name="Cookie-2" value="List">
+                              <label for="Cookie-2">Cookie-2</label>
+                            </div>
+                            <div> <input type="checkbox" id="Template Record" name="Template Record" value="List">
+                              <label for="Template Record">Template Record</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="color: rgb(47, 47, 241);">Select All |Unselect All</div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <label class="ForInstitution">Selected Institution Name</label>
+                    <section class="ForDivingcolumn2">
+                      <div>Cookies</div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <!-- DefualtClient -->
+              <section class="row">
+                <div class="col-md-6 col-sm-6">
+                  <input type="text" class="Institution" placeholder="Defualt Client/Merchant Name">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="pull-right">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </section>
+              <div class="Menu">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <label class="ForInstitution">Available Clients</label>
+                    <section class="ForDivingcolumn1">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                          <input type="search" placeholder="Search..">
+                          <div class="ListofMenu">
+                            <div> <input type="checkbox" id="cookie" clickon="">
+                              <label for="Cookie">CookieMerchant</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="color: rgb(47, 47, 241);">Select All |Unselect All</div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <label class="ForInstitution">Selected Clients</label>
+                    <section class="ForDivingcolumn2">
+                      <div>CookieMerchant</div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <!-- Default Store -->
+              <section class="row">
+                <div class="col-md-6 col-sm-6">
+                  <input type="text" class="Institution" placeholder="Default Store">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="pull-right">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </section>
+              <div class="Menu">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <label class="ForInstitution">Available Store</label>
+                    <section class="ForDivingcolumn1">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                          <div class="ListofMenu">
+                            <div> <input type="checkbox" id="cookie" clickon="">
+                              <label for="Cookie">CookieStore</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="color: rgb(47, 47, 241);">Select All |Unselect All</div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <label class="ForInstitution">Selected Store</label>
+                    <section class="ForDivingcolumn2">
+                      <div>CookieStore</div>
+                    </section>
+                  </div>
+                </div>
+                <div class="ForPassword">
+                  <label class="col-md-4 col-sm-4" id="buttonSpacing">Failed Change Password Attempts:</label>
+                  <input class="col-md-4 col-sm-4" id="buttonSpacing1" type="text">
+                  <button class="col-md-4 col-sm-4" id="buttonSpacing2" type="reset">Reset</button>
+                </div>
+                <div class="ForPassword">
+                  <label class="col-md-4 col-sm-4" id="buttonSpacing">Failed Validate OTP Attempts:</label>
+                  <input class="col-md-4 col-sm-4" id="buttonSpacing1" type="text">
+                  <button class="col-md-4 col-sm-4" id="buttonSpacing2" type="reset">Reset</button>
+                </div>
+                <div class="ForPassword">
+                  <label class="col-md-4 col-sm-4" id="buttonSpacing">Failed Validate Security Answers Attempts:</label>
+                  <input class="col-md-4 col-sm-4" id="buttonSpacing1" type="text">
+                  <button class="col-md-4 col-sm-4" id="buttonSpacing2" type="reset">Reset</button>
+                </div>
+                <div class="btncontrol">
+                  <button id="buttonSpacing3" onclick="ChangeCom(2)" type="submit">Submit</button>
+                  <button id="buttonSpacing4" type="reset">Back</button>
+                  <button id="buttonSpacing5" type="reset">Reset Security Answer</button>
+                  <button id="buttonSpacing6" type="reset">Reset Security Question</button>
+                  <button id="buttonSpacing7" type="reset">Reset Password</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+        <!-- for footer -->
+        <div class="card-body m-30">
+          <!-- Progress Section -->
+          <div class="footerdesign">
+            <div class="row custom-progress-bar">
+              <div class="col-md-2">
+                <div class="custom-nav text-center">
+                  <div>
+                    <i class="fa fa-arrow-left	"></i>
+                  </div>
+                  <p>Previous</p>
+                </div>
+              </div>
+              <div class="col-md-8 text-center">
+              </div>
+              <div class="col-md-2">
+                <div class="custom-nav text-center pull-right">
+                  <div>
+                    <i class="fa fa-arrow-right"></i>
+                  </div>
+                  <p onclick="ChangeCom(2)">Next</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="status==2">
+  <app-access-control-panel></app-access-control-panel>
+</div>
